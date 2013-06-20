@@ -1,0 +1,15 @@
+#parameters:
+#    acme_feed_processor.example.class: Acme\FeedProcessorBundle\Example
+
+#services:
+#    acme_feed_processor.example:
+#        class: %acme_feed_processor.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+
+parameters:
+    acme_feed_processor.feed_manager.class: Acme\FeedProcessorBundle\Service\FeedManager
+
+services:
+    feed_manager:
+        class: %acme_feed_processor.feed_manager.class%
+        arguments:
