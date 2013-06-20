@@ -9,12 +9,10 @@ You can use it, follow below instructions:
 
 
     $oFeed = $this->get('feed_manager');
-
     $oFeed->setXsl(<path_to_xsl>/Example.xsl');
-
     $oFeed->setFeed("http://feeds.feedburner.com/symfony/blog");
-
     $sXmlRes = $oFeed->process();
-    
+
+
 
 
